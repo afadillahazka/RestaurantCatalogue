@@ -46,7 +46,7 @@ describe('Searching restaurant', () => {
 
     it('should show the restaurant found by Favorite restaurant', (done) => {
       document.getElementById('restaurant').addEventListener('restaurant:updated', () => {
-        expect(document.querySelectorAll('.movie-item').length).toEqual(3);
+        expect(document.querySelectorAll('.restaurant-item').length).toEqual(3);
         done();
       });
 
@@ -61,7 +61,7 @@ describe('Searching restaurant', () => {
 
     it('should show the name of the restaurant found by Favorite restaurant', (done) => {
       document.getElementById('restaurant').addEventListener('restaurant:updated', () => {
-        const RestaurantTitles = document.querySelectorAll('.movie__title');
+        const RestaurantTitles = document.querySelectorAll('.restaurant__title');
         expect(RestaurantTitles.item(0).textContent).toEqual('-');
         expect(RestaurantTitles.item(1).textContent).toEqual('-');
         expect(RestaurantTitles.item(2).textContent).toEqual('-');

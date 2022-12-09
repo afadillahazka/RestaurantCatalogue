@@ -27,7 +27,7 @@ describe('Showing all favorite restaurant', () => {
 
     it('should show the information that no restaurant have been liked', (done) => {
       document.getElementById('restaurant').addEventListener('restaurant:updated', () => {
-        expect(document.querySelectorAll('.movie-item__not__found').length).toEqual(1);
+        expect(document.querySelectorAll('.restaurant-item__not__found').length).toEqual(1);
         done();
       });
 
@@ -45,7 +45,7 @@ describe('Showing all favorite restaurant', () => {
   describe('When favorite restaurant exist', () => {
     it('should show the restaurant', (done) => {
       document.getElementById('restaurant').addEventListener('restaurant:updated', () => {
-        expect(document.querySelectorAll('.movie-item').length).toEqual(2);
+        expect(document.querySelectorAll('.restaurant-item').length).toEqual(2);
         done();
       });
       const favoriteRestaurant = spyOnAllFunctions(FavoriteRestaurantIdb, false);

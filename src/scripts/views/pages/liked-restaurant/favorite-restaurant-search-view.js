@@ -30,7 +30,7 @@ class FavoriteRestaurantSearchView {
   }
 
   _getEmptyMovieTemplate() {
-    return '<div class="movie-item__not__found">Restoran tidak ditemukan</div>';
+    return '<div class="restaurant-item__not__found">Restoran tidak ditemukan</div>';
   }
 }
 
