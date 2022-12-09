@@ -96,7 +96,7 @@ describe('Searching restaurant', () => {
     it('should show the empty message', (done) => {
       document.getElementById('restaurant')
         .addEventListener('restaurant:updated', () => {
-          expect(document.querySelectorAll('.movie-item__not__found').length).toEqual(1);
+          expect(document.querySelectorAll('.restaurant-item__not__found').length).toEqual(1);
           done();
         });
 
@@ -121,7 +121,7 @@ describe('Searching restaurant', () => {
 
     it('should show - when the restaurant returned does not contain a title', (done) => {
       document.getElementById('restaurant').addEventListener('restaurant:updated', () => {
-        const movieTitles = document.querySelectorAll('.movie__title');
+        const movieTitles = document.querySelectorAll('.restaurant__title');
         expect(movieTitles.item(0).textContent).toEqual('-');
 
         done();
