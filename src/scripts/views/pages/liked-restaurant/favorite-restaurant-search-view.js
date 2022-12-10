@@ -5,7 +5,6 @@ class FavoriteRestaurantSearchView {
     return `
     <div class="content">
     <h2 class="content__heading">Your Liked Restaurant</h2>
-    <input id="query" type="text">
     <div id="restaurant" class="restaurant">
     </div>
   `;
@@ -30,7 +29,7 @@ class FavoriteRestaurantSearchView {
   }
 
   _getEmptyMovieTemplate() {
-    return '<div class="restaurant-item__not__found">Restoran tidak ditemukan</div>';
+    return '<div class="movie-item__not__found">Restoran tidak ditemukan</div>';
   }
 }
 

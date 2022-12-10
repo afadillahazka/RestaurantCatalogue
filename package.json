@@ -8,8 +8,7 @@
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist",
     "test": "karma start",
-    "e2e": "codeceptjs run --steps",
-    "build-image": "node sharp.js"
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "Aditya Fadillah Azka <afadillahazka@gmail.com>",
