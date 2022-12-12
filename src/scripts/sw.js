@@ -1,5 +1,8 @@
 import 'regenerator-runtime';
+import { precacheAndRoute } from 'workbox-precaching';
 import CacheHelper from './utils/cache-helper';
+
+precacheAndRoute(self.__WB_MANIFEST);
 
 // Daftar asset yang akan dicaching
 const assetsToCache = [

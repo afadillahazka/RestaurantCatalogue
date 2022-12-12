@@ -1,5 +1,5 @@
 {
-  "name": "ERestaurant-Catalogue",
+  "name": "Restaurant-Catalogue",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.prod.js",
     "serve": "http-server dist",
     "test": "karma start",
-    "e2e": "codeceptjs run --steps"
+    "e2e": "codeceptjs run --steps",
+    "build-image": "node sharp.js"
   },
   "keywords": [],
   "author": "Aditya Fadillah Azka <afadillahazka@gmail.com>",

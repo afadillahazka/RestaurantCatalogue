@@ -15,7 +15,7 @@ Scenario('liking one restaurant', async ({ I }) => {
   // I.see('Tidak ada restaurant untuk ditampilkan', '.restaurant-item__not__found');
   I.amOnPage('/');
   I.wait(5);
-  I.seeElement('.title');
+  I.seeElement('.restaurant__title');
   const firstRestaurant = locate('.restaurant__title').first();
   const firstRestaurantTitle = await I.grabTextFrom(firstRestaurant);
   I.click(firstRestaurant);

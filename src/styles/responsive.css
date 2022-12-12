@@ -70,3 +70,17 @@
       grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .hero {
+  background-image: url('../public/heros/hero-image_4-small.jpg');
+
+  }
+}
+
+@media only screen and (min-width: 651px) {
+  .hero {
+  background-image: url('../public/heros/hero-image_4-large.jpg');
+
+  }
+}

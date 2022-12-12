@@ -7,6 +7,7 @@ class FavoriteRestaurantSearchView {
     <h2 class="content__heading">Your Liked Restaurant</h2>
     <div id="restaurant" class="restaurant">
     </div>
+    <div class="restaurant-item__not__found"></div>
   `;
   }
 
